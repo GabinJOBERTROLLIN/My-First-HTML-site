@@ -1,5 +1,3 @@
-Bouvet
-Jobert-Rollin
 
 ## My First HTML Site
 Made by BOUVET Victor and JOBERT--ROLLIN Gabin
