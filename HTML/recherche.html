@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="../CSS/sheet.css">
+    <title>Personnalise ton groupe de musique !</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.svg">
+    <script src ='../JavaScript/animationRecherche.js'></script>
+</head>
+<body>
+    <!--Grid-->
+    <div class=gridContainer>
+        <!--RechercheGauche-->
+        <aside class = RechercheGauche>
+        <h1>groupe Musical</h1>
+            <!--Checkrock-->
+            <div>
+                <label for="rockoupas" class="container">Rock
+                <input type="checkbox" id="rockoupas" name="rock" value ="rock" onclick="selectionRock()" checked="true">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+
+    
+            <!--CheckClassic-->
+            <div>
+                <label for="classiqueoupas" class="container">Classic
+                <input type="checkbox" id="classiqueoupas" name="classique" onclick="selectionClassic()" value ="classique" checked="true">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <!--<div>
+                <label for="hardRrockoupas" class="container">Hard Rock
+                <input type="checkbox" id="hardRockoupas" name="hardRrock" value ="hardRrock" onclick="selectionhardRock()" checked="true">
+                <span class="checkmark"></span>
+                </label>
+            </div>-->
+            <div>
+                <label for="popoupas" class="container">Pop
+                <input type="checkbox" id="popoupas" name="pop" onclick="selectionPop()" value ="pop" checked="true">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            <div>
+                <label for="rapoupas" class="container">Rap
+                <input type="checkbox" id="rapoupas" name="rap" onclick="selectionRap()" value ="rap" checked="true">
+                <span class="checkmark"></span>
+                </label>
+            </div>
+            
+        </aside>
+        <!--Critère ChoixArticle-->
+        <section class = ChoixArticle>
+            <h1>Selectionnez un groupe prédéfini, puis personnalisez-le !</h1>
+            <ul style="list-style: none;" class = "GroupContainer">
+                
+            </ul>
+        </section>
+    </div>
+    <script>afficheHeader();</script>
+    <script>recherche();</script>    
+    <script>afficheFooter();</script>
+</body>
+
+<!-- obsolete, a supprimer -->

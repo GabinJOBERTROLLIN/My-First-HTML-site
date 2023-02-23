@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Personnalise ton groupe de musique !</title>
+    <link rel="stylesheet" href="../CSS/sheet.css">
+    <link rel="stylesheet" href="../CSS/panier.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.svg">
+    
+</head>
+
+<body>
+    <div id = "ContainerGridPanier">
+        <div id = "buttonsPanier">
+            <a href = "../HTML/personnalisation.html?m=5" ><button class="buttonModifier" onclick="resetPrix()">Modifier</button></a>
+        </div>
+    <ul class="compoGroup_flexContainer" style="list-style: none;" id= "ContainerListeMusicien">
+        <template id="listeMusicien">
+            <li >
+                <a >
+                    <img src="{{photo}}" class="musicien" >
+                    <div class="infoProduit">
+                        <div class="nomProduit">{{nom}}</div>
+                        <div class="prix">{{prix}}€</div>               
+                    </div>
+                </a>
+            </li>
+        </template>
+    </ul>
+
+    
+    <form action="" id="formulairePanier">
+        <fieldset>
+            <br>Prénom:
+                <br><input type="text" placeholder="CPE" name="Prénom" required></br>
+            <br>Nom:
+                <br><input type="text" placeholder="Lyon" name="Nom" required></br>
+            <br>Email:  
+                <br><input type="text" placeholder="support@cpe.fr" name="Email" required></br>
+            <br>Numéro de téléphone :
+                <br><input type="tel" name="tel" pattern="[0-9]{10}" maxlength="10" placeholder="0605040302" required><br>
+            <br>Livraison Express 72h :
+                <br><input type="checkbox" name="Date de livraison" id="livraisonExpress" onchange="LivraisonExpress(); MajPrix()"></br>
+            <br>Addresse de livraison :
+                <br><input type="text" name="Adresse" placeholder="4 rue victor grignard" id="adresse" onkeyup="geocoding(event);MajPrix()" required></br>
+            <br>Code postal :  
+                <br><input type="text" name="CodePostal" pattern=[0-9]{5} placeholder="69100" id="codepostal" onkeyup="geocoding(event);MajPrix()" required></br>
+            <br>Ville :  
+                <br><input type="text" name="Ville" id="ville" placeholder="villeurbanne" onkeyup="geocoding(event);MajPrix()" required></br>
+            <br><input type="submit" id="submit" value="Valider la commande"></br>
+        </fieldset>
+    </form>
+    </div>
+    <div id="fraisTitre">Prix total avec livraison :</div>
+    <div id="frais"></div>
+    <script src ='../JavaScript/animationRecherche.js'></script>
+    <script src ='../JavaScript/FraisDeLivraison.js'></script>
+    <script src ='../JavaScript/panier.js'></script>
+    <script>afficheHeader();</script>  
+    <script>afficheFooter();</script>
+    
+</body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <link rel="stylesheet" href="../CSS/sheet.css">
+    <link rel="stylesheet" href="../CSS/compoGroup.css">
+    <title>Personnalise ton groupe de musique !</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.svg">
+</head>
+
+<body >
+    <div id="compoGroup_GridContainer">
+        <aside >
+            <h1>Style du musicien</h1>
+                <!--Checkrock-->
+                <div>
+                    <label for="rockoupas" class="container">Rock
+                    <input type="checkbox" id="rockoupas" name="rock" value ="rock" onclick="selectionRock()" checked="true">
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+               
+                <!--CheckClassic-->
+                <div>
+                    <label for="classiqueoupas" class="container">Classic
+                    <input type="checkbox" id="classiqueoupas" name="classique" onclick="selectionClassic()" value ="classique" checked="true">
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="popoupas" class="container">Pop
+                    <input type="checkbox" id="popoupas" name="pop" onclick="selectionPop()" value ="pop" checked="true">
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="rapoupas" class="container">Rap
+                    <input type="checkbox" id="rapoupas" name="rap" onclick="selectionRap()" value ="rap" checked="true">
+                    <span class="checkmark"></span>
+                    </label>
+                </div>
+                    
+            </aside>
+    <a href = "../HTML/panier.html" class="panier" ><button class = "buttonModifier" onclick="validePanier()">Valider</button></a>
+    
+    <h1 id="groupeActuel">Groupe de musique actuel</h1>
+    <ul style="list-style: none;" class ="compoGroup_flexContainer" id= "ContainerlisteCompo">
+        <template id="listeCompo">
+            <li >
+                <a onclick="addMusicien('{{nom}}')">
+                    <img src= "{{photo}}" class="musicien">
+                    <div class="infoProduit">
+                        <div class="nomProduit">{{nom}}</div>
+                        <div class="prix">{{prix}}€</div>               
+                    </div>
+                    
+                </a>
+                
+            </li>
+        </template>
+    </ul>
+
+    <h1 id="musiciensDispo">Liste des musiciens disponibles</h1>
+    <ul class="compoGroup_flexContainer" style="list-style: none;" id= "ContainerlisteCompoMovable">
+        <template id="listeCompoMovable">
+            <li >
+                <a >
+                    <img src="{{photo}}" class="musicien" >
+                    <div class="infoProduit">
+                        <div class="nomProduit">{{nom}}</div>
+                        <div class="prix">{{prix}}€</div>               
+                    </div>
+                    <button id="annulation" onclick="removeMusicien('{{nom}}')">
+                        <img src="../images/annulation.jpg" id="annulation">
+                    </button>
+                    
+                </a>
+            </li>
+        </template>
+    </ul>
+
+</div>
+
+<script src ='../JavaScript/animationRecherche.js'></script>
+<script src ='../JavaScript/template.js'></script>
+<script src ='../JavaScript/compoduGroupe.js'></script>
+<!-- <script>afficheGroupe();</script> -->
+<script>afficheHeader();</script>
+<script>afficheFooter();</script>
+</body>
+</html>
