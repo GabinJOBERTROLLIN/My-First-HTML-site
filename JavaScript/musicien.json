@@ -1,0 +1,208 @@
+{"theme":[
+    {   "groupe": "classique1",
+        "musiciens":[
+            {
+                "nom" : "Frédéric Chopin",
+                "role" : "pianiste",
+                "prix" : "150",
+                "photo" : "../images/Chopin-1.jpg"
+            },
+            {
+                "nom" : "Rachmaninoff",
+                "role" : "pianiste",
+                "prix" : "50",
+                "photo" : "../images/rachmaninoff.jpg"
+
+            },
+            {
+                "nom" : "Opéra de Paris",
+                "role" : "instruments",
+                "prix" : "500",
+                "photo" : "../images/opera_paris.jpg"
+            }
+        ],
+        "photo" : "../images/classique.png",
+        "styl" : "classique"
+    
+    }
+,
+    {   "groupe": "classique2",
+        "musiciens":[
+        {
+            "nom" : "Opéra de Sydney",
+            "role" : "instruments",
+            "prix" : "50",
+            "photo" : "../images/opera_sydney.jpg"
+        },
+
+        {
+            "nom" : "Beethoven",
+            "role" : "pianiste",
+            "prix" : "50",
+            "photo" : "../images/beethoven.jpg"
+        }
+
+
+    ],
+    "photo" : "../images/classique.png",
+    "styl" : "classique"}
+,
+    {   "groupe" : "pop",
+        "musiciens": [
+        {
+            "nom" : "Beyoncé",
+            "role" : "chanteur",
+            "prix" : "50",
+            "photo" : "../images/beyonce.jpg"
+        }
+        ,
+        {
+            "nom" : "Taylor Swift",
+            "role" : "chanteur",
+            "prix" : "50",
+            "photo" : "../images/taylor swift.jpg"
+        }
+        ,
+        {
+            "nom" : "Justin Bieber",
+            "role" : "chanteur",
+            "prix" : "50",
+            "photo" : "../images/justin bieber.jpg"
+        }
+    ],
+    "photo" : "../images/rock.jpg",
+    "styl" : "pop"}
+,
+    {   "groupe" : "rock",
+        "musiciens":[
+        {
+            "nom" : "Jimi Hendrix",
+            "role" : "guitariste",
+            "prix" : "50",
+            "photo" : "../images/jimi hendrix.jpg"
+        },
+        {
+            "nom" : "Eric Clapton",
+            "role" : "guitariste",
+            "prix" : "50",
+            "photo" : "../images/eric-clapton.jpeg"
+        },
+        {
+            "nom" : "Jimmy Page",
+            "role" : "guitariste",
+            "prix" : "50",
+            "photo" : "../images/jimmy-page-1977.jpg"
+        }
+    ],
+    "photo" : "../images/rock.jpg",
+    "styl" : "rock"}
+    ,
+    {   "groupe" : "gun n roses",
+        "musiciens":[
+        {
+            "nom" : "Slash",
+            "role" : "guitariste",
+            "prix" : "50",
+            "photo" : "../images/slash gun n roses.jpg"
+        },
+        {
+            "nom" : "axel Rose",
+            "role" : "chanteur",
+            "prix" : "50",
+            "photo" : "../images/axel rose gun n roses.jpg"
+        },
+        {
+            "nom" : "Duff McKagan",
+            "role" : "bassiste",
+            "prix" : "50",
+            "photo" : "../images/duf mckagan.jpg"
+        },
+        {
+            "nom" : "Dizzy Reed",
+            "role" : "pianist",
+            "prix" : "50",
+            "photo" : "../images/dizzy reed gun n roses.jpeg"
+        }
+    ],
+    "photo" : "../images/gun n roses.jpg",
+    "styl" : "hardRock"}
+
+
+    ,
+    {"groupe":"beatles",
+        "musiciens":[
+        {
+            "nom" : "John Lennon",
+            "role" : "guitariste Chanteur",
+            "prix" : "50",
+            "photo" : "../images/john lennon beatles.jpg"
+        },
+        {
+            "nom" : "Paul McCartney",
+            "role" : "bassiste Chanteur",
+            "prix" : "50",
+            "photo" : "../images/paul mckartney.jpg"
+        },
+        {
+            "nom" : "george Harrison",
+            "role" : "guitariste",
+            "prix" : "50",
+            "photo" : "../images/george harrison.jpg"
+        },
+        {
+            "nom" : "Ringo Starr",
+            "role" : "Drummer",
+            "prix" : "50",
+            "photo" : "../images/ringo starr beatles.jpg"
+        }
+    ],
+    "photo" : "../images/the beatles.jpg",
+    "styl" : "rock"}
+    ,
+    {"groupe":"Kanye West",
+        "musiciens":[
+        {
+            "nom" : "Kanye West",
+            "role" : "chanteur producer",
+            "prix" : "50",
+            "photo" : "../images/kanye west.png"
+        }
+    ],
+    "photo" : "../images/kanye west logo.jpg",
+    "styl" : "rap"}
+    ,
+    {"groupe":"rap2",
+        "musiciens":[
+        {
+            "nom" : "kaaris",
+            "role" : "chanteur",
+            "prix" : "50",
+            "photo" : "../images/kaaris.jpg"
+        },
+        {
+            "nom" : "Heizenberg",
+            "role" : "producer",
+            "prix" : "50",
+            "photo" : "../images/heisenberg.jpg"
+        }
+    ],
+    "photo" : "../images/rock.jpg",
+    "styl" : "rap"},
+    {"groupe":"rap3",
+        "musiciens":[
+        {
+            "nom" : "Booba",
+            "role" : "chanteur",
+            "prix" : "50",
+            "photo" : "../images/kaaris booba.jpg"
+        },
+        {
+            "nom" : "Eazy Dew",
+            "role" : "producer",
+            "prix" : "50",
+            "photo" : "../images/eazy_dew.jpg"
+        }
+    ],
+    "photo" : "../images/rock.jpg",
+    "styl" : "rap"}
+]}
